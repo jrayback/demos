@@ -6,6 +6,8 @@
   "scripts": {
     "test": "mocha"
   },
+  "repository": {
+  },
   "author": "Jonathan Rayback",
   "license": "ISC",
   "dependencies": {
