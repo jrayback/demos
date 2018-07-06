@@ -1,2 +1,2 @@
 # demos
-Stuff I've been working on...
+A collection of demo code.
