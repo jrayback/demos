@@ -1,2 +1,2 @@
-#! /bin/bash
-docker build -t hogwartsapi .
+#!/bin/bash
+docker-compose build
