@@ -1,0 +1,174 @@
+{
+  "GET /": {
+    "desc": "returns static test page with link to API documentation",
+    "response": "200 text/html",
+    "implemented": true 
+  },
+  
+  "GET /api/": {
+    "desc": "returns static page with API documentation",
+    "response": "200 text/html",
+    "implemented": true 
+  },
+  
+  "GET /api/teachers": {
+    "desc": "returns all teachers",
+    "response": "200 application/json",
+    "data": [{}, {}, {}],
+    "implemented": true 
+  },
+
+  "GET /api/teachers/:id": {
+    "desc": "returns one teacher respresented by his id",
+    "response": "200 application/json",
+    "data": {},
+    "implemented": true
+  },
+
+  "POST /api/teachers": {
+    "desc": "create and returns a new teacher uisng the posted object as the teacher",
+    "response": "201 application/json",
+    "data": {},
+    "implemented": true
+  },
+
+  "PUT /api/teachers/:id": {
+    "desc": "updates and returns the matching teacher with the posted update object",
+    "response": "200 application/json",
+    "data": {},
+    "implemented": true
+  },
+
+  "DELETE /api/teachers/:id": {
+    "desc": "deletes and returns the matching teacher",
+    "response": "200 application/json",
+    "data": {},
+    "implemented": true
+  },
+
+  "GET /api/classes": {
+    "desc": "returns all classes",
+    "response": "200 application/json",
+    "data": [{}, {}, {}],
+    "implemented": true
+  },
+
+  "GET /api/classes/:id": {
+    "desc": "returns one class respresented by its id",
+    "response": "200 application/json",
+    "data": {},
+    "implemented": true
+  },
+
+  "POST /api/classes": {
+    "desc": "create and returns a new class using the posted object as the class",
+    "response": "201 application/json",
+    "data": {},
+    "implemented": true
+  },
+
+  "PUT /api/classes/:id": {
+    "desc": "updates and returns the matching class with the posted update object",
+    "response": "200 application/json",
+    "data": {},
+    "implemented": true
+  },
+
+  "DELETE /api/classes/:id": {
+    "desc": "deletes and returns the matching class",
+    "response": "200 application/json",
+    "data": {},
+    "implemented": true
+  },
+
+  "GET /api/books": {
+    "desc": "returns all books",
+    "response": "200 application/json",
+    "data": [{}, {}, {}],
+    "implemented": false
+  },
+
+  "GET /api/books/:id": {
+    "desc": "returns one book respresented by its id",
+    "response": "200 application/json",
+    "data": {},
+    "implemented": false
+  },
+
+  "POST /api/books": {
+    "desc": "create and returns a new book uisng the posted object as the book",
+    "response": "201 application/json",
+    "data": {},
+    "implemented": false
+  },
+
+  "PUT /api/books/:id": {
+    "desc": "updates and returns the matching book with the posted update object",
+    "response": "200 application/json",
+    "data": {},
+    "implemented": false
+  },
+
+  "DELETE /api/books/:id": {
+    "desc": "deletes and returns the matching book",
+    "response": "200 application/json",
+    "data": {},
+    "implemented": false
+  },
+
+  "GET /api/students": {
+    "desc": "returns all students",
+    "response": "200 application/json",
+    "data": [{}, {}, {}],
+    "implemented": false
+  },
+
+  "GET /api/students/:id": {
+    "desc": "returns one student respresented by its id",
+    "response": "200 application/json",
+    "data": {},
+    "implemented": false
+  },
+
+  "POST /api/students": {
+    "desc": "create and returns a new student uisng the posted object as the student",
+    "response": "201 application/json",
+    "data": {},
+    "implemented": false
+  },
+
+  "PUT /api/students/:id": {
+    "desc": "updates and returns the matching student with the posted update object",
+    "response": "200 application/json",
+    "data": {},
+    "implemented": false
+  },
+
+  "DELETE /api/students/:id": {
+    "desc": "deletes and returns the matching student",
+    "response": "200 application/json",
+    "data": {},
+    "implemented": false
+  },
+
+  "GET /api/classes/:id/teachers": {
+    "desc": "returns all teachers for one class respresented by its id",
+    "response": "200 application/json",
+    "data": [{}, {}, {}],
+    "implemented": false
+  },
+
+  "GET /api/classes/:id/books": {
+    "desc": "returns all books for one class respresented by its id",
+    "response": "200 application/json",
+    "data": [{}, {}, {}],
+    "implemented": false
+  },
+
+  "GET /api/classes/:id/students": {
+    "desc": "returns all students for one class respresented by its id",
+    "response": "200 application/json",
+    "data": [{}, {}, {}],
+    "implemented": false
+  }
+}

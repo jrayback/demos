@@ -3,5 +3,5 @@ WORKDIR /app
 COPY ./app/package*.json /app/
 RUN npm i
 COPY ./app /app/
-CMD node app.js
+CMD npm start > server.log
 EXPOSE 8080
