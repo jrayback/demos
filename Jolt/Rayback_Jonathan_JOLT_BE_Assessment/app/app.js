@@ -6,6 +6,7 @@ const morgan = require('morgan')
 // mount the routes
 const teacherRouter = require('./routes/teacher')
 const classRouter = require('./routes/class')
+const bookRouter = require('./routes/book')
 
 // const db = require('./db')
 
@@ -16,8 +17,9 @@ app.use(express.static('public'))
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
-app.use('/api/teachers', teacherRouter)
-app.use('/api/classes', classRouter)
+app.use('/api/teachers/', teacherRouter)
+app.use('/api/classes/', classRouter)
+app.use('/api/books/', bookRouter)
 
 // this error handler should be last so that it can catch any errors thrown before it
 app.use((err, req, res, next) => {

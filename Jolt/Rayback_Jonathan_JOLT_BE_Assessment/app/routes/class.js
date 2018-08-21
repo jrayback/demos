@@ -27,7 +27,10 @@ let classes = [{
   id: '6'
 }]
 
-let nextid = 7
+// override data to mimic truer behavior for tests
+// comment/uncomment as needed
+classes = []
+let nextid = 100
 
 function getNextId () {
   return nextid++ + '' // increment id and coerce into string for storage

@@ -33,7 +33,10 @@ let teachers = [{
   id: '6'
 }]
 
-let nextid = 7
+// Overwrite any primed data (simulate fresh instance)
+// comment/uncomment as needed
+teachers = []
+let nextid = 100
 
 function getNextId () {
   return nextid++ + '' // increment id and coerce into string for storage
