@@ -5,6 +5,7 @@ const expect = require('chai').expect
 
 const getTeacher = () => ({firstname: 'Filius', lastname: 'Flitwick'})
 const getClass = () => ({name: 'Care of Magical Creatures'})
+const getBook = () => ({name: 'Break with a Banshee'})
 
 function testGet (endpoint, done) {
   request(app)
@@ -22,7 +23,7 @@ function testGet (endpoint, done) {
 }
 
 describe('[GET tests]', function () {
-  // TODO Add books and students
+  // TODO Add students
   const tests = [
     {label: 'teachers', endpoint: '/api/teachers/'},
     {label: 'classes', endpoint: '/api/classes/'},
@@ -66,10 +67,11 @@ function testGetSingle (endpoint, getSample, done) {
 }
 
 describe('[GET ONE tests]', function () {
-  // TODO Add books and students
+  // TODO Add students
   const tests = [
     {label: 'teacher', endpoint: '/api/teachers/', getSample: getTeacher},
-    {label: 'class', endpoint: '/api/classes/', getSample: getClass}
+    {label: 'class', endpoint: '/api/classes/', getSample: getClass},
+    {label: 'book', endpoint: '/api/books/', getSample: getBook}
   ]
   tests.forEach(function (test) {
     it(`Should get a single ${test.label} by id`, function (done) {
@@ -100,7 +102,8 @@ describe('[POST tests]', function () {
   // TODO Add books and students
   const tests = [
     {label: 'teacher', endpoint: '/api/teachers/', getSample: getTeacher},
-    {label: 'class', endpoint: '/api/classes/', getSample: getClass}
+    {label: 'class', endpoint: '/api/classes/', getSample: getClass},
+    {label: 'book', endpoint: '/api/books/', getSample: getBook}
   ]
   tests.forEach(function (test) {
     it(`Should create a ${test.label}`, function (done) {
